@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,17 @@
 <body>
     <h1 class="monserrat">Bienvenido a este sitio hecho en Django!</h1>
     <p class="monserrat">Esta es la homepage.</p>
-    <a href="/posts">Ver posts</a>
-    <a href="/contact">Contacto</a>
+    <a class="" href="/posts">Ver posts</a>
+    <a class="" href="/contact">Contacto</a>
 </body>
 </html>
+-->
+
+{% extends "base.html" %}
+
+{% block title %}Home - My Django Site{% endblock %}
+
+{% block content %}
+    <h1 class="monserrat">Welcome to My Django Site</h1>
+    <p class="monserrat">This is the home page.</p>
+{% endblock %}

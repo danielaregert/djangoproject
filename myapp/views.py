@@ -21,9 +21,9 @@ def contact_view(request):
             email = form.cleaned_data["email"]
             message = form.cleaned_data["message"]
 
-            subject = f"New Contact Form Submission from {name}"
+            subject = f"Mi website: Nuevo mensaje de {name}"
             full_message = f"Message from {name} ({email}):\n\n{message}"
-            send_mail(subject, full_message, "your_email@gmail.com", ["recipient@example.com"])
+            send_mail(subject, full_message, "danielaregert@gmail.com", ["danielaregert@gmail.com"])
 
             return redirect("success")  # Redirect to a success page
     else:

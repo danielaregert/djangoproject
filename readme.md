@@ -28,3 +28,5 @@ EMAIL_PORT=587
 EMAIL_USE_TLS=True
 EMAIL_HOST_USER=yourmail@gmail.com
 EMAIL_HOST_PASSWORD='your_password'
+
+#in production: python manage.py collectstatic

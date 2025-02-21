@@ -6,3 +6,8 @@
     font-weight: <weight>;
     font-style: normal;
 }
+
+.form{
+    display:flex;
+    flex-direction:column;
+}
