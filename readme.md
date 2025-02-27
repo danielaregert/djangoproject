@@ -2,14 +2,17 @@
 install myenv
 create myenvdani
 install python
+upgrade pip
 install django
+install pillow
+install dotenv
 clone this repo
 
 ## Activate virtual enviroment
 > source myenvdani/Scripts/activate
 
 ## Run server
-open the folder mydojangoproject
+on the folder mydjangoproject:
 > python manage.py runserver
 
 ### Important comands
@@ -24,7 +27,7 @@ open the folder mydojangoproject
 from django.contrib.auth.models import User
 User.objects.create_superuser('username', 'email@email.com', 'yourpassword')
 
-## set the mail .env
+## set the mail in the .env file
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
